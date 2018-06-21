@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Board from './Board';
 import { calculateWinner } from './util';
 
+import Canvas from './Canvas';
+
 class Game extends React.Component {
     
     constructor(props) {
@@ -83,6 +85,7 @@ class Game extends React.Component {
                     <div>{status}</div>
                     <ol>{moves}</ol>
                 </div>
+                <Canvas />
             </div>
         );
     }
